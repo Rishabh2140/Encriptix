@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rishbah Chandrakar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishabh's animated portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="banner">
+
+        <header>
+            <a href="#" class="logo"><span>My </span>Portfolio_</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h3>Hey_</h3>
+            <h2>I am <span id="text">Rishabh</span></h2>
+            <aside>
+                <h4>Hello Everyone!</h4> <br>
+                <details>
+                    <summary>I am Rishabh Chandrakar...</summary>
+                    <p>I am Rishabh Chandrakar, and I am currently pursuing a Bachelor's degree in Computer Science and
+                        Engineering at NIT Raipur. My journey in the field of technology has been exciting and
+                        fulfilling so
+                        far. I have a strong foundation in front-end development and have recently started delving into
+                        back-end
+                        technologies.
+                        I have dedicated a significant amount of time to mastering front-end development, which includes
+                        HTML,
+                        CSS, and JavaScript. I am proficient in using frameworks like React to build interactive and
+                        user-friendly web applications. Additionally, I have also gained a good understanding of
+                        back-end
+                        development using Node.js, allowing me to work on full-stack projects seamlessly.
+                        My academic pursuits, combined with hands-on experience and continuous learning, have equipped
+                        me with
+                        the skills and knowledge required to thrive in the dynamic field of computer science. I am
+                        passionate
+                        about leveraging technology to solve real-world problems and am excited about the endless
+                        possibilities
+                        that lie ahead in my journey.
+                        Feel free to customize and add more details based on your experiences and achievements!</p>
+                </details>
+            </aside>
+            <button>Hire Me</button>
+            <button class="Chat"><ion-icon name="chatbubbles-outline"></ion-icon> Let's Chat</button>
+
+        </div>
+        <img src="colors.png" class="colors">
+        <img src="ri.png" class="rishu">
+
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/studentRishabh?mibextid=ZbWKwL" target="_blank"><ion-icon
+                        name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/rishabh-chandrakar-09a13b289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://www.google.co.in/"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/rishabh.chandrakar_?igsh=c2E0aDhxbGtvZGF2" target="_blank"><ion-icon
+                        name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <div class="daynight">
+            <ion-icon name="moon-outline"></ion-icon>
+            <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let typingText = new Typed("#text", {
+            strings: ["Rishabh Chandrakar", "NITian", "Frontend developer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1000,
+        })
+        let banner = document.querySelector('.banner');
+        let daynight = document.querySelector('.daynight');
+        daynight.onclick = function () {
+            banner.classList.toggle('night');
+        }
+    </script>
+</body>
+
+</html>
